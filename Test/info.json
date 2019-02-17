@@ -1,0 +1,6 @@
+{
+	"title":"Blinking leds",
+	"subTitle":"Hello World blinking led",
+	"readme":"Very Simple example of blinking led using button on webPage",
+	"partIds":["esp8266_generic","esp32_generic"]
+}
