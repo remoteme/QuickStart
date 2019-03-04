@@ -1,0 +1,13 @@
+$$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of Your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32 $$
+
+$$id: esp1 type: device_id deviceType: esp name: my device id hint:name of Your ESP device $$
+$$id: esp1_name type: device_name deviceType: esp name: my device name  default: Device hint:name of Your ESP device XY$$
+
+$$id: mrugacz type: device_id deviceType: web name: device Mrugacz hint:name of mrugacz device $$
+$$id: mrugacz_name type: device_name deviceType: web name: device Mrugacz name hint:name of mrugacz device $$
+
+$$id: webpage2 type: device_id deviceType: web name: device 2 id hint:name of Your ESP device $$
+$$id: webpage2_name type: device_name deviceType: web name:  device 2 name default: Device hint:name of Your ESP device XY$$
+
+$$id: python type: device_id deviceType: rpiPython name: device 1 id hint:name of Your python device $$
+$$id: python_name type: device_name deviceType: rpiPython name: device 1 name default: Device hint:name of Your python device XY$$

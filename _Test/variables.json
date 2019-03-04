@@ -1,0 +1,21 @@
+[ {
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "$$id: temperature type: variable variableType: I name: temperature variable Name default: temperature hint: some name for Your variable $$",
+  "persistence" : true,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}, {
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "$$id: pressure type: variable variableType: I name: pressure variable Name default: pressure hint: some name for Your variable $$",
+  "persistence" : true,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+} ]

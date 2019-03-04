@@ -1,0 +1,61 @@
+[
+  {
+    "id": "esp8266_generic",
+    "title": "ESP32 based WiFi module",
+    "subTitle": "Wemos, NosdddeMCU etc",
+    "readme": "",
+    "links": [
+      {
+        "name": "shop#1",
+        "url": "https://nettigo.eu/products/modul-wifi-nodemcu-v2-bezprzewodowy-modul-oparty-na-esp8266-12e"
+      },
+      {
+        "name": "shop#2",
+        "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+      }
+    ]
+  },
+  {
+    "id": "esp32_generic",
+    "title": "esp32 Generic",
+    "subTitle": "ESP32 based WiFi module",
+    "readme": "",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/en/wifi-modules/8893-esp32-wifi-bt-42-platform-with-module-esp-wroom-32-compatible-with-esp32-devkit.html"
+      }
+    ]
+  },
+  {
+    "id": "esp_generic",
+    "title": "esp32 or esp8266",
+    "subTitle": "Some ESP development board with esp",
+    "readme": "",
+    "links": [
+      {
+        "name": "node mcu",
+        "url": "https://nettigo.eu/products/modul-wifi-nodemcu-v2-bezprzewodowy-modul-oparty-na-esp8266-12e"
+      },
+      {
+        "name": "wemos d1 mini pro",
+        "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+      }
+    ]
+  },
+  {
+    "id": "led",
+    "title": "Some led",
+    "subTitle": "Lighting led with resistor if needed",
+    "readme": "",
+    "links": [
+      {
+        "name": "nettigo",
+        "url": "https://nettigo.eu/products/green-led-10-mm-20-60-mcd-60-degree"
+      }
+    ]
+  }
+
+]
+
+	

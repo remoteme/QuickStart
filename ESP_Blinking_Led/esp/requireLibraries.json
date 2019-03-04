@@ -1,0 +1,11 @@
+[ {
+  "libraryName" : "RemoteMe ",
+  "libraryAuthor" : "RemoteMe.org",
+  "description" : "Main library to use RemoteMe",
+  "requirements" : "It's connect to Your RemoteMe account"
+}, {
+  "libraryName" : "RemoteMeUtils ",
+  "libraryAuthor" : "RemoteMe.org",
+  "description" : "Utils library to use RemoteMe",
+  "requirements" : "For example to make direct connections and use websocket protocol"
+} ]	
