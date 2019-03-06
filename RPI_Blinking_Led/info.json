@@ -1,0 +1,6 @@
+{
+	"title":"Blinking leds with Rasbperry Pi",
+	"subTitle":"Hello World blinking led",
+	"readme":"Very Simple example of blinking led using button on webPage",
+	"partIds":["rpi_generic","led"]
+}

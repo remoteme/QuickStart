@@ -28,6 +28,18 @@
     ]
   },
   {
+    "id": "rpi_generic",
+    "title": "RasberryPi Generic",
+    "subTitle": "RasbeprryPi with WiFi module",
+    "readme": "",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/en/modules-and-kits-raspberry-pi-zero/8330-raspberry-pi-zero-w-wifi-bluetooth-512mb-ram-1ghz.html"
+      }
+    ]
+  },
+  {
     "id": "esp_generic",
     "title": "esp32 or esp8266",
     "subTitle": "Some ESP development board with esp",
