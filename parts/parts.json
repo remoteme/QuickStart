@@ -34,8 +34,11 @@
     "readme": "",
     "links": [
       {
-        "name": "shop",
+        "name": "shop RPI zero W",
         "url": "https://botland.com.pl/en/modules-and-kits-raspberry-pi-zero/8330-raspberry-pi-zero-w-wifi-bluetooth-512mb-ram-1ghz.html"
+      },{
+        "name": "shop Raspberry Pi 3",
+        "url": "https://botland.com.pl/pl/moduly-i-zestawy-raspberry-pi-3-b-plus/11142-raspberry-pi-3-model-b-wifi-dual-band-bluetooth-1gb-ram-14ghz-7131796402594.html"
       }
     ]
   },
@@ -46,11 +49,11 @@
     "readme": "",
     "links": [
       {
-        "name": "node mcu",
+        "name": "shop node mcu",
         "url": "https://nettigo.eu/products/modul-wifi-nodemcu-v2-bezprzewodowy-modul-oparty-na-esp8266-12e"
       },
       {
-        "name": "wemos d1 mini pro",
+        "name": "shop wemos d1 mini pro",
         "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
       }
     ]
@@ -62,7 +65,7 @@
     "readme": "",
     "links": [
       {
-        "name": "nettigo",
+        "name": "shop",
         "url": "https://nettigo.eu/products/green-led-10-mm-20-60-mcd-60-degree"
       }
     ]
