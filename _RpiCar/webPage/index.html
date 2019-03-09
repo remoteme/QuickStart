@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--color picker -->
+
+    <script src="/libs/iro/iro_min.js"></script>
+    <link rel="stylesheet" href="/libs/getmdl-select/getmdl-select_min.css">
+    <script src="/libs/getmdl-select/getmdl-select_min.js"></script>
+    <!--color picker end -->
+    <script src="/libs/gl-matrix-min.js"></script>
+    <script src="/libs/adapter.js"></script>
+    <script src="/libs/gauge/gauge.min.js"></script>
+    <script src="/libs/remoteMe.js"></script>
+    <script src="/libs/remoteMeMessages.js"></script>
+    <script src="/libs/remoteMeApiRest.js"></script>
+    <script src="/libs/variables.js"></script>
+    <script src="/libs/operationTimer.js"></script>
+    <script src="/libs/remoteMeComponents.js"></script>
+    <link rel="stylesheet" href="/libs/remoteMeComponents.css">
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  
+ 
+</head>
+<script>
+	var thisDeviceId = ####deviceId#;
+	var raspberryPiDeviceId = ####raspberrypideviceid#;
+</script>
+
+<body>
+
+
+<script>
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+</script>
+<camera autoConnect="true" showInfo="true" class="cameraView"></camera>
+<connectionstatus webSocket="true" directConnection="false" camera="true"></connectionstatus>
+<variable component="cameraMouseTrack" type="SMALL_INTEGER_2" style="display:block" name="cameraPos" xMin="298"
+          xMax="830" invertX="true" yMin="223" yMax="723" invertY="true" requiredMouseDown="true"
+          reset="true"></variable>
+
+<div class="joystickButtons">
+    <div class="buttons">
+        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="cameraPos"
+                  label="Gyroscope Camera"
+                  xMin="298" xMax="830" xRange="19" invertX="true" yMin="223" yMax="725" yRange="20"
+                  invertY="false"></variable>
+        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="drive"
+                  label="Gyroscope Drive"
+                  xMin="-512" xMax="512" xRange="19" invertX="false" yMin="-512" yMax="512" yRange="20"
+                  invertY="false"></variable>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect gyroscope" onClick="toggleFullScreen()">fullscreen	</button>
+
+    </div>
+    <div class="joystickParent">
+        <variable class="joystick" component="joystick_simple" type="SMALL_INTEGER_2" name="drive"
+                  xRange="1024" yRange="1024"></variable>
+    </div>
+    <div style="clear: both;"/>
+</div>
+</body>
+</html>
