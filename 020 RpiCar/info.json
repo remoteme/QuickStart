@@ -1,0 +1,6 @@
+{
+	"title":"FPV car with Rasbperry Pi",
+	"subTitle":"Amoust ;) Out of the box FPV car",
+	"readme":"Control your RasbeprryPi 4wd car with smarphone with live camera preview",
+	"partIds":["rpi_generic","led"]
+}

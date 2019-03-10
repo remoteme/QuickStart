@@ -80,6 +80,9 @@ def onDriveChange(x, y):
     left+=delta;
     right+=delta;
     
+	# when your car doesnt drive as suppose try to swich right and left variable below
+	# or remove add minuses next to 2
+	# another way is to switch cables conencted to motors
     setMotor(0, 2*left)
     setMotor(1, -2*right)
     pass
@@ -111,8 +114,8 @@ try:
     remoteMe = remoteme.RemoteMe()
 
     remoteMe.startRemoteMe(sys.argv)
-    remoteMe.getVariables().observeSmallInteger2("cameraPos" ,onCameraPosChange);
-    remoteMe.getVariables().observeSmallInteger2("drive" ,onDriveChange);
+    remoteMe.getVariables().observeSmallInteger2("$$camera_variable$$" ,onCameraPosChange);
+    remoteMe.getVariables().observeSmallInteger2("$$drive_variable$$" ,onDriveChange);
     remoteMe.wait()
 
 finally:

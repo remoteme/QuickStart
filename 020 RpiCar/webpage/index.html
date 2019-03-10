@@ -57,17 +57,17 @@ window.addEventListener("load",function() {
 </script>
 <camera autoConnect="true" showInfo="true" class="cameraView"></camera>
 <connectionstatus webSocket="true" directConnection="false" camera="true"></connectionstatus>
-<variable component="cameraMouseTrack" type="SMALL_INTEGER_2" style="display:block" name="cameraPos" xMin="298"
+<variable component="cameraMouseTrack" type="SMALL_INTEGER_2" style="display:block" name="$$camera_variable$$" xMin="298"
           xMax="830" invertX="true" yMin="223" yMax="723" invertY="true" requiredMouseDown="true"
           reset="true"></variable>
 
 <div class="joystickButtons">
     <div class="buttons">
-        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="cameraPos"
+        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="$$camera_variable$$"
                   label="Gyroscope Camera"
                   xMin="298" xMax="830" xRange="19" invertX="true" yMin="223" yMax="725" yRange="20"
                   invertY="false"></variable>
-        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="drive"
+        <variable class="gyroscope" component="gyroscope" type="SMALL_INTEGER_2" name="$$drive_variable$$"
                   label="Gyroscope Drive"
                   xMin="-512" xMax="512" xRange="19" invertX="false" yMin="-512" yMax="512" yRange="20"
                   invertY="false"></variable>
@@ -75,7 +75,7 @@ window.addEventListener("load",function() {
 
     </div>
     <div class="joystickParent">
-        <variable class="joystick" component="joystick_simple" type="SMALL_INTEGER_2" name="drive"
+        <variable class="joystick" component="joystick_simple" type="SMALL_INTEGER_2" name="$$drive_variable$$"
                   xRange="1024" yRange="1024"></variable>
     </div>
     <div style="clear: both;"/>
