@@ -1,12 +1,12 @@
-$$id: wifiName type: string name: wifi name hint: Your wifi name req: 0 halfSize: 1$$
-$$id: wifiPassword type: password name: wifi password hint: Your wifi password req: 0 halfSize: 1$$
+$$id: wifiName type: string name: WiFi name hint: Your WiFi name req: 0 halfSize: 1$$
+$$id: wifiPassword type: password name: WiFi password hint: Your WiFi password req: 0 halfSize: 1$$
 
 $$id: token type: token name: token hint: Token which will be used for authentification $$
-$$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of Your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
+$$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
 
-$$id: esp type: device_id deviceType: esp name: esp id hint:name of Your ESP device $$
-$$id: esp_name type: device_name deviceType: esp name: my device name  default: My Esp for Blinking leds hint:name of Your ESP device$$
+$$id: esp type: device_id deviceType: esp name: esp id hint:name of your ESP device $$
+$$id: esp_name type: device_name deviceType: esp name: my device name  default: My ESP for Blinking LEDs hint:name of your ESP device$$
 
-$$id: webpage type: device_id deviceType: web name: You webPage name hint:name of Your webPage$$
-$$id: webpage_name type: device_name deviceType: web name: You webPage Id default: My WebPage for Blinking leds hint:id of You webPage$$
+$$id: webpage type: device_id deviceType: web name: Your webPage name hint:name of your webPage$$
+$$id: webpage_name type: device_name deviceType: web name: Your webPage Id default: My WebPage for Blinking LEDs hint:id of your webPage$$
 
