@@ -1,6 +1,6 @@
 {
-	"title":"Led with Rasbperry Pi & Web Page",
-	"subTitle":"Hello World blinking led",
-	"readme":"Very Simple example of blinking led using button on webPage",
+	"title":"LED with Raspberry Pi & Web Page",
+	"subTitle":"Hello World blinking LED",
+	"readme":"Very simple example of blinking LED using button on webPage",
 	"partIds":["rpi_generic","led"]
 }

@@ -2,16 +2,12 @@
   {
     "id": "esp8266_generic",
     "title": "ESP32 based WiFi module",
-    "subTitle": "Wemos, NosdddeMCU etc",
+    "subTitle": "Wemos, NodeMCU etc",
     "readme": "",
     "links": [
       {
-        "name": "shop#1",
-        "url": "https://nettigo.eu/products/modul-wifi-nodemcu-v2-bezprzewodowy-modul-oparty-na-esp8266-12e"
-      },
-      {
-        "name": "shop#2",
-        "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+        "name": "NodeMCU v2 - 4MB",
+        "url": "https://botland.com.pl/en/wifi-modules/4450-wifi-module-esp8266-nodemcu-v2-4mb.html"
       }
     ]
   },
@@ -22,7 +18,7 @@
     "readme": "",
     "links": [
       {
-        "name": "shop",
+        "name": "ESP-32",
         "url": "https://botland.com.pl/en/wifi-modules/8893-esp32-wifi-bt-42-platform-with-module-esp-wroom-32-compatible-with-esp32-devkit.html"
       }
     ]
@@ -49,12 +45,12 @@
     "readme": "",
     "links": [
       {
-        "name": "shop node mcu",
-        "url": "https://nettigo.eu/products/modul-wifi-nodemcu-v2-bezprzewodowy-modul-oparty-na-esp8266-12e"
+        "name": "NodeMCU v2 - 4MB",
+        "url": "https://botland.com.pl/en/wifi-modules/4450-wifi-module-esp8266-nodemcu-v2-4mb.html"
       },
       {
-        "name": "shop wemos d1 mini pro",
-        "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+        "name": "ESP-32",
+        "url": "https://botland.com.pl/en/wifi-modules/8893-esp32-wifi-bt-42-platform-with-module-esp-wroom-32-compatible-with-esp32-devkit.html"
       }
     ]
   },
@@ -66,7 +62,7 @@
     "links": [
       {
         "name": "shop",
-        "url": "https://nettigo.eu/products/green-led-10-mm-20-60-mcd-60-degree"
+        "url": "https://botland.com.pl/en/leds/11440-led-5mm-red-10pcs.html"
       }
     ]
   }

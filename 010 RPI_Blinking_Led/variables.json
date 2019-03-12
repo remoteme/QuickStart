@@ -1,7 +1,7 @@
 [ {
   "mode" : "LOCAL",
   "type" : "BOOLEAN",
-  "name" : "$$id: led_variable type: variable variableType: BOOLEAN name: variable name default: led hint:  Just variable name to store led state$$",
+  "name" : "$$id: led_variable type: variable variableType: BOOLEAN name: variable name default: led hint:  Just variable name to store LED state$$",
   "persistence" : true,
   "historyRound" : 0,
   "scheduled" : false,
