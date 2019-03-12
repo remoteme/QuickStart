@@ -65,6 +65,73 @@
         "url": "https://botland.com.pl/en/leds/11440-led-5mm-red-10pcs.html"
       }
     ]
+  },
+  {
+    "id": "chassis_4wd",
+    "title": "4WD robot chassis ",
+    "subTitle": "Lighting led with resistor if needed",
+    "readme": "Chassis Rectangle 4WD 4-wheel robot chassis with DC Motor Drive.",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/en/robot-chassis/7289-chassis-rectangle-4wd-4-wheel-robot-chassis-with-dc-motor-drive.html"
+      }
+    ]
+  },{
+    "id": "servo_driver",
+    "title": "I2C servo driver, 16-channel  ",
+    "subTitle": "16 channels, 12-bit resolution - I2C servo driver",
+    "readme": "It's an i2c-controlled PWM driver with a built in clock. That means that, unlike the TLC5940 family, you do not need to continuously send it signal tying up your microcontroller, its completely free running!",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://nettigo.eu/products/i2c-servo-driver-16-channel"
+      }
+    ]
+  },{
+    "id": "rpi_camera",
+    "title": "Camera HD for Raspberry Pi  ",
+    "subTitle": "Camera compatible with your Raspberry Pi version",
+    "readme": "Camera module with adjustable focus connected to the special connector of minicomputer Raspberry Pi version zero, 3, 2, B+, A+ and older A and B. Make Sure conductor tape is compatibile with Your RPI if not buy proper one",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/pl/kamery-dla-raspberry-pi-i-akcesoria/4521-kamera-waveshare-camera-hd-f-night-vision-ov5647-5mpx-ir-z-regulacja-ostrosci-dla-raspberry-pi-moduly-ir.html"
+      }
+    ]
+  },{
+    "id": "small_servo",
+    "title": "Servo SG-90 - micro  ",
+    "subTitle": "",
+    "readme": " ",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/en/micro-servos/13127-servo-sg-90-micro-180-i-360.html"
+      }
+    ]
+  },{
+    "id": "tb6612fng",
+    "title": "Motor Driver -Dual  ",
+    "subTitle": "SparkFun Motor Driver -Dual TB6612FNG (1A)",
+    "readme": "Dual channel motor driver DC. The device operates in accordance with the PWM signa",
+    "links": [
+      {
+        "name": "shop",
+        "url": "https://botland.com.pl/en/motor-controllers-modules/10667-sparkfun-motor-driver-dual-tb6612fng-1a.html"
+      }
+    ]
+  },{
+    "id": "power",
+    "title": "Power Source",
+    "subTitle": "Power Source for Your project",
+    "readme": "It can be batteries, accumlators, etc . Remember to use proper voltage if voltage is to higer You can buy step-down ",
+    "links": [
+      {
+        "name": "step-down",
+        "url": "https://botland.com.pl/en/step-down-converters/2967-step-down-voltage-inverter-lm2596-32v-35v-3a.html"
+      }
+    ]
   }
 
 ]
