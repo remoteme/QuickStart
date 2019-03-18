@@ -1,6 +1,0 @@
-$$id: python type: device_id deviceType: rpiPython name: Blinking LED python id hint:name of your python device $$
-$$id: python_name type: device_name deviceType: rpiPython name: blinking LED python name default: Blinking LED python hint:name of your python device$$
-
-$$id: webpage type: device_id deviceType: web name: You webPage name hint:name of your webPage$$
-$$id: webpage_name type: device_name deviceType: web name: You webPage ID default: My WebPage for Blinking LEDs hint:id of your webPage$$
-
