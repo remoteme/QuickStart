@@ -3,4 +3,3 @@ $$id: python_name type: device_name deviceType: rpiPython name:  Python car cont
 
 $$id: webpage type: device_id deviceType: web name: Rpi car controller webPage id hint: name of Your webPage$$
 $$id: webpage_name type: device_name deviceType: web name: Rpi car controller webPage name default: Web Page FPV car hint: id of You webPage $$
-
