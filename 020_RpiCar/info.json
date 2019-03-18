@@ -2,5 +2,5 @@
 	"title":"FPV car with Rasbperry Pi",
 	"subTitle":"Amoust ;) Out of the box FPV car",
 	"readme":"Control your RasbeprryPi 4wd car with smarphone with live camera preview",
-	"partIds":["rpi_generic","chassis_4wd","servo_driver","rpi_camera","small_servo","tb6612fng","power"]
+	"partIds":["rpi_generic","chassis_4wd","servo_driver","rpi_camera","camera_tilt","small_servo","tb6612fng","power"]
 }

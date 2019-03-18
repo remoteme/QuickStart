@@ -132,7 +132,18 @@
         "url": "https://botland.com.pl/en/step-down-converters/2967-step-down-voltage-inverter-lm2596-32v-35v-3a.html"
       }
     ]
-  }
+  },{
+  "id": "camera_tilt",
+  "title": "Camera Tilt",
+  "subTitle": "Micro Pan/Tilt Servo Bracket with Camera Mount",
+  "readme": "Plastic handle that allows you to create a platform for control in two axes by using a flow type micro. ",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://botland.com.pl/en/grapples-handles-gimbals/3724-micro-pantilt-servo-bracket-with-camera-mount-plastic.html"
+    }
+  ]
+}
 
 ]
 
