@@ -52,8 +52,6 @@ def setMotor(motorId, speed):
     pwm.set_pwm(motorsPWM[motorId], 0, int(speed))
 
 
-def setCameraPos(i1, i2):
-    remoteMe.getVariables().setSmallInteger2("cameraPos", i1, i2)
 
 
 
@@ -68,19 +66,19 @@ def onDriveChange(x, y):
     logger.info("on drive change  x {} , y {}".format(x, y))
     global pwm
     
-    left=y;
-    right=y;
+    left=y
+    right=y
     
-    left+=x;
-    right-=x;
+    left+=x
+    right-=x
     
-    delta=(left+right)/2;
+    delta=(left+right)/2
     
     
-    left+=delta;
-    right+=delta;
+    left+=delta
+    right+=delta
     
-	# when your car doesnt drive as suppose try to swich right and left variable below
+    # when your car doesnt drive as suppose try to swich right and left variable below
 	# or remove add minuses next to 2
 	# another way is to switch cables conencted to motors
     setMotor(0, 2*left)
@@ -114,7 +112,7 @@ try:
     remoteMe = remoteme.RemoteMe()
 
     remoteMe.startRemoteMe(sys.argv)
-    remoteMe.getVariables().observeSmallInteger2("$$camera_variable$$" ,onCameraPosChange);
+    remoteMe.getVariables().observeSmallInteger2("$$cameraPos_variable$$" ,onCameraPosChange);
     remoteMe.getVariables().observeSmallInteger2("$$drive_variable$$" ,onDriveChange);
     remoteMe.wait()
 
