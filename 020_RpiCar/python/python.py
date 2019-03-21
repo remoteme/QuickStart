@@ -55,11 +55,11 @@ def setMotor(motorId, speed):
 
 
 
-def onCameraPosChange(i1, i2):
+def onCameraPosChange(x, y):
     global pwm
-    logger.info("on camera change {} , {}".format(i1, i2))
-    pwm.set_pwm(1, 0, i1)
-    pwm.set_pwm(0, 0, i2)
+    logger.info("on camera change {} , {}".format(x, y))
+    pwm.set_pwm(1, 0, x)
+    pwm.set_pwm(0, 0, y)
     pass
 
 def onDriveChange(x, y):
@@ -74,7 +74,6 @@ def onDriveChange(x, y):
     
     delta=(left+right)/2
     
-    
     left+=delta
     right+=delta
     
@@ -82,7 +81,7 @@ def onDriveChange(x, y):
 	# or remove add minuses next to 2
 	# another way is to switch cables conencted to motors
     setMotor(0, 2*left)
-    setMotor(1, -2*right)
+    setMotor(1, 2*right)
     pass
 
 
