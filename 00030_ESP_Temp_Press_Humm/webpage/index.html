@@ -1,0 +1,67 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--color picker -->
+
+    <script src="/libs/iro/iro_min.js"></script>
+    <link rel="stylesheet" href="/libs/getmdl-select/getmdl-select_min.css">
+    <script src="/libs/getmdl-select/getmdl-select_min.js"></script>
+    <!--color picker end -->
+    <script src="/libs/gl-matrix-min.js"></script>
+    <script src="/libs/adapter.js"></script>
+    <script src="/libs/gauge/gauge.min.js"></script>
+    <script src="/libs/remoteMe.js"></script>
+    <script src="/libs/remoteMeMessages.js"></script>
+    <script src="/libs/remoteMeApiRest.js"></script>
+    <script src="/libs/variables.js"></script>
+    <script src="/libs/operationTimer.js"></script>
+    <script src="/libs/remoteMeComponents.js"></script>
+    <link rel="stylesheet" href="/libs/remoteMeComponents.css">
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<script>
+	var thisDeviceId=####deviceId#;
+	var raspberryPiDeviceId=####raspberrypideviceid#;
+</script>
+
+<body>
+
+
+<script>
+
+</script>
+<variable  component="gauge"  type="INTEGER"  name="humm" label="Hummidity %" widthheight="300" min="0" max="100" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
+<variable  component="gauge"  type="INTEGER"  name="temp" label="temperature C" widthheight="300" min="-60" max="60" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
+<variable  component="gauge"  type="INTEGER"  name="press" label="Pressure hPa" widthheight="300" min="880" max="1090" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
+<!--Chart begin 9797-->
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width:calc( 100vw - 10px) ;margin:5px;float:right;position:relative">
+	<div class="mdl-card__supporting-text">
+		<div id="chartDiv9797" style="width:100%; height:400px" ></div>
+	</div>
+	<div class="mdl-textfield mdl-js-textfield" style="padding:5px 0;position:absolute;bottom:0px;right:0px;width:310px;">
+		<input class="mdl-textfield__input" style="width:180px;    margin-left: 118px;"  type="text" id="chartRange9797"  >
+		<div style="clear: both"></div>
+	</div>
+</div>
+
+
+</body>
+</html>

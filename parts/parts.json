@@ -143,6 +143,17 @@
       "url": "https://botland.com.pl/en/grapples-handles-gimbals/3724-micro-pantilt-servo-bracket-with-camera-mount-plastic.html"
     }
   ]
+},{
+  "id": "bme280",
+  "title": "humidity, temperature, pressure sensor",
+  "subTitle": "Humidity sensor, temperature and pressure at a supply voltage of 3.3 V with I2C",
+  "readme": "Humidity sensor, temperature and pressure at a supply voltage of 3.3 V with I2C and SPI. Measuring range: temperature: -40 °C to 85 °C, humidity: 10% RH to 80% RH, pressure: from 300 hPa to 1100 hPa. ",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://botland.com.pl/en/pressure-sensors/11803-bme280-humidity-temperature-and-pressure-sensor-110-kpa-i2c-spi-33v.html"
+    }
+  ]
 }
 
 ]
