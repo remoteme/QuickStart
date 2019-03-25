@@ -4,9 +4,6 @@ $$id: wifiPassword type: password name: WiFi password hint: Your WiFi password r
 $$id: token type: token name: token hint: Token which will be used for authentification $$
 $$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
 
-$$id: esp type: device_id deviceType: esp name: esp id hint:name of your ESP device $$
-$$id: esp_name type: device_name deviceType: esp name: my device name  default: My ESP for Blinking LEDs hint:name of your ESP device$$
+$$id: esp type: device deviceType: esp name: Sensor data writter id_name hint: id_name of Your esp default: Write Data ESP $$
 
-$$id: webpage type: device_id deviceType: web name: Your webPage name hint:name of your webPage$$
-$$id: webpage_name type: device_name deviceType: web name: Your webPage Id default: My WebPage for Blinking LEDs hint:id of your webPage$$
-
+$$id: webpage type: device deviceType: web name: Display data id_name hint: id_name of Your webPage default: Display Data Webpage $$

@@ -1,11 +1,32 @@
 [ {
   "mode" : "LOCAL",
-  "type" : "BOOLEAN",
-  "name" : "$$id: led_variable type: variable variableType: BOOLEAN name: variable name default: led hint:  Just variable name to store LED state$$",
+  "type" : "INTEGER",
+  "name" : "$$id: temp type: STRING name: variable name for temperature default: temp hint:  Just variable name to store temperature halfSize: 1$$",
   "persistence" : true,
-  "historyRound" : 0,
+  "historyRound" :  $$id: history_round type: integer name: round data at chart to X minutes default: 60 hint:  for bigger values then 60min just consider to solve it at arduino site pos:5 halfSize: 1$$,
   "scheduled" : false,
   "extra" : "",
   "extra2" : "",
   "extra3" : ""
-} ]
+},{
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "$$id: press type: STRING name: variable name for pressure default: press hint:  Just variable name to store pressure halfSize: 1$$",
+  "persistence" : true,
+  "historyRound" :  $$history_round$$,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "$$id: humm type: STRING name: variable name for hummidity default: humm hint:  Just variable name to store hummidity halfSize: 1$$",
+  "persistence" : true,
+  "historyRound" :  $$history_round$$,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}
+ ]

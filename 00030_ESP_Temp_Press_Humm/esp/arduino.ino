@@ -1,13 +1,19 @@
-#define WIFI_NAME "ania24"
-#define WIFI_PASSWORD "tuchowkrakow"
-#define DEVICE_ID 1
-#define DEVICE_NAME "test"
-#define TOKEN "~394979_JauaL17qFOSx"
+#define WIFI_NAME "$$wifiName$$"
+#define WIFI_PASSWORD "$$wifiPassword$$"
+#define DEVICE_ID $$esp$$
+#define DEVICE_NAME "$$esp_name$$"
+#define TOKEN "$$token$$"
 
 
 #include <RemoteMe.h>
 #include <RemoteMeSocketConnector.h>
+
+$$IF ESP_type == ESP_32$$
+#include <WiFi.h>
+$$ELSE$$
 #include <ESP8266WiFi.h>
+$$/IF$$
+
 #include <SparkFunBME280.h>
 
 BME280 mySensor;
@@ -15,9 +21,9 @@ RemoteMe& remoteMe = RemoteMe::getInstance(TOKEN, DEVICE_ID);
 
 //*************** CODE FOR CONFORTABLE VARIABLE SET *********************
 
-inline void setHumm(double d) {remoteMe.getVariables()->setInteger("humm", d); }
-inline void setPress(double d) {remoteMe.getVariables()->setInteger("press", d); }
-inline void setTemp(double d) {remoteMe.getVariables()->setInteger("temp", d); }
+inline void setHumm(double d) {remoteMe.getVariables()->setInteger("$$humm$$", d); }
+inline void setPress(double d) {remoteMe.getVariables()->setInteger("$$press$$", d); }
+inline void setTemp(double d) {remoteMe.getVariables()->setInteger("$$temp$$", d); }
 
 //*************** IMPLEMENT FUNCTIONS BELOW *********************
 
@@ -109,7 +115,7 @@ void sendData(){
 void loop() {
     remoteMe.loop();
     static long time=0;
-    if (time+1000<millis()){
+    if (time+10000<millis()){
       time=millis();
 
       sendData();

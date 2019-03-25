@@ -1,7 +1,7 @@
 [ {
   "mode" : "LOCAL",
   "type" : "SMALL_INTEGER_2",
-  "name" : "$$id: cameraPos_variable type: variable variableType: SMALL_INTEGER_2 name: variable name default: cameraPos hint:  Just variable name to send camera pos $$",
+  "name" : "$$id: cameraPos_variable type: string name: variable name default: cameraPos hint:  Just variable name to send camera pos $$",
   "persistence" : false,
   "historyRound" : 0,
   "scheduled" : false,
@@ -12,7 +12,7 @@
  {
   "mode" : "LOCAL",
   "type" : "SMALL_INTEGER_2",
-  "name" : "$$id: drive_variable type: variable variableType: SMALL_INTEGER_2 name: variable name default: drive hint:  Just variable name to send drivings $$",
+  "name" : "$$id: drive_variable type: string name: variable name default: drive hint:  Just variable name to send drivings $$",
   "persistence" : false,
   "historyRound" : 0,
   "scheduled" : false,

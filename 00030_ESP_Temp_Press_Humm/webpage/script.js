@@ -12,30 +12,30 @@ function addChart(){
 		var variables="";
 		
 			
-			variables+="humm";
+			variables+="$$humm$$";
 		
 			
 		variables+=",";
 			
-			variables+="temp";
+			variables+="$$temp$$";
 		
 			
 		variables+=",";
 			
-			variables+="press";
+			variables+="$$press$$";
 		
 		
 		var url = `/api/rest/v1/variable/get/timeseries/dd.MM.yyyy%20HH:mm/${from}/${to}/${variables}/`;
 		
 		$.get(url, function (data, status) {
 		
-			if (data["humm"]==undefined){
-				alert("cannot read data for variable humm");
+			if (data["$$humm$$"]==undefined){
+				alert("cannot read data for variable $$humm$$");
 				return ;
 			}
 			var trace0 = {
-				x: data["humm"].datas,
-				y: data["humm"].value,
+				x: data["$$humm$$"].datas,
+				y: data["$$humm$$"].value,
 				name: "hummidity hPa",
 				fill: "none",
 				type: "area",
@@ -48,13 +48,13 @@ function addChart(){
 				}
 			};
 		
-			if (data["temp"]==undefined){
-				alert("cannot read data for variable temp");
+			if (data["$$temp$$"]==undefined){
+				alert("cannot read data for variable $$temp$$");
 				return ;
 			}
 			var trace1 = {
-				x: data["temp"].datas,
-				y: data["temp"].value,
+				x: data["$$temp$$"].datas,
+				y: data["$$temp$$"].value,
 				name: "temperature ",
 				fill: "none",
 				type: "area",
@@ -67,13 +67,13 @@ function addChart(){
 				}
 			};
 		
-			if (data["press"]==undefined){
-				alert("cannot read data for variable press");
+			if (data["$$press$$"]==undefined){
+				alert("cannot read data for variable $$press$$");
 				return ;
 			}
 			var trace2 = {
-				x: data["press"].datas,
-				y: data["press"].value,
+				x: data["$$press$$"].datas,
+				y: data["$$press$$"].value,
 				name: "pressure",
 				fill: "none",
 				type: "bar",
