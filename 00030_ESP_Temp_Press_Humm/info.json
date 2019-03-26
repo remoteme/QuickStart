@@ -2,6 +2,5 @@
 	"title":"Temperature Hummidity and pressure measure",
 	"subTitle":"Under construction dont play with this",
 	"readme":"Very Simple example of blinking LED using button on webPage",
-	"hidden":true,
 	"partIds":["esp_generic","bme280"]
 }
