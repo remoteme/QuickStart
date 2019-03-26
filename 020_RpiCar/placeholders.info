@@ -1,5 +1,5 @@
 $$id: python type: device deviceType: rpiPython name: Python car control script id_name default: RPI_Python$$
 
-$$id: webpage type: device deviceType: web name: Rpi car controller webPage id_name hint: id_name of Your webPage default: Car Control$$
+$$id: webpage type: device deviceType: web name: Rpi car controller WebPage id_name hint: id_name of Your webPage default: Car Control$$
 
 $$id: camera_calibration type: device deviceType: web name: Camera Position calibration id_name  hint: id_name of Your calibrarion device  default: Camera Calibrarion$$

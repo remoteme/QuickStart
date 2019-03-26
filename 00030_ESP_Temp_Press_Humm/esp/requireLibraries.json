@@ -8,4 +8,11 @@
   "libraryAuthor" : "RemoteMe.org",
   "description" : "Utils library to use RemoteMe",
   "requirements" : "For example to make direct connections and use websocket protocol"
-} ]	
+}, {
+  "libraryName" : "SparkFun BME280 ",
+  "libraryAuthor" : "SparkFun Electronics",
+  "description" : "A library to drive the Bosch BME280 Altimeter and Pressure sensor",
+  "requirements" : "To Read BME280 module measurements"
+}
+
+]
