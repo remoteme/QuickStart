@@ -35,21 +35,33 @@
 
 
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <script src="scriptHistory.js"></script>
 </head>
 
 
 <body>
+<connectionstatus  webSocket="true" directConnection="false" camera="false" ></connectionstatus>
 <script>
 	var thisDeviceId=####deviceId#;
 	var raspberryPiDeviceId=####raspberrypideviceid#;
+	$( document ).ready(function() {
+		addChart();
+	});
 </script>
-<connectionstatus  webSocket="true" directConnection="false" camera="false" ></connectionstatus>
-<a href="history.html" style="display:block;width:calc(100% - 50px);margin:10px" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Show history</a>
 
-<variable  component="gauge"  type="INTEGER"  name="$$humm$$" label="Hummidity %" widthheight="300" min="0" max="100" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
-<variable  component="gauge"  type="INTEGER"  name="$$temp$$" label="temperature C" widthheight="300" min="-60" max="60" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
-<variable  component="gauge"  type="INTEGER"  name="$$press$$" label="Pressure hPa" widthheight="300" min="880" max="1090" tickDelta="20" minorTick="2" borders="false" valuebox="true" ></variable>
+<a href="index.html" style="display:block;width:calc(100% - 50px);margin:10px" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Show Actual</a>
+
+<!--Chart begin 9797-->
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width:calc( 100vw - 10px) ;margin:5px;float:right;position:relative">
+    <div class="mdl-card__supporting-text">
+        <div id="chartDiv9797" style="width:100%; height:400px" ></div>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield" style="padding:5px 0;position:absolute;bottom:0px;right:0px;width:310px;">
+        <input class="mdl-textfield__input" style="width:180px;    margin-left: 118px;"  type="text" id="chartRange9797"  >
+        <div style="clear: both"></div>
+    </div>
+</div>
+
 
 </body>
 </html>
