@@ -1,0 +1,6 @@
+{
+	"title":"Send notification to your application at android",
+	"subTitle":"",
+	"readme":"Push is sent when button at ESP is pressed.",
+	"partIds":["esp_generic","led","button"]
+}

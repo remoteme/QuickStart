@@ -154,6 +154,17 @@
       "url": "https://botland.com.pl/en/pressure-sensors/11803-bme280-humidity-temperature-and-pressure-sensor-110-kpa-i2c-spi-33v.html"
     }
   ]
+},{
+  "id": "button",
+  "title": "Button",
+  "subTitle": "Monostable button",
+  "readme": "Monostable button (tact switch)",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://botland.com.pl/en/tact-switch-buttons/3495-tact-switch-6x6mm-43mm-tht-2pin-5pcs.html"
+    }
+  ]
 }
 
 ]

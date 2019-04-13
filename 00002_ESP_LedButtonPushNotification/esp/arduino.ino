@@ -6,6 +6,7 @@
 
 
 #include <RemoteMe.h>
+#include <RBD_Button.h> 
 #include <RemoteMeSocketConnector.h>
 
 $$IF ESP_type == ESP_32$$
@@ -14,6 +15,9 @@ $$ELSE$$
 #include <ESP8266WiFi.h>
 $$/IF$$
 
+RBD::Button button(D1);
+
+boolean currentLedState;
 
 RemoteMe& remoteMe = RemoteMe::getInstance(TOKEN, DEVICE_ID);
 
@@ -24,14 +28,13 @@ inline void setLed(boolean b) {remoteMe.getVariables()->setBoolean("$$led_variab
 //*************** IMPLEMENT FUNCTIONS BELOW *********************
 
 void onLedChange(boolean b) {
-	Serial.printf("onLedChange: b: %d\n",b);
-	digitalWrite(D1, b?HIGH:LOW);
+	currentLedState=b;
+	digitalWrite(D2, b?HIGH:LOW);
 }
 
 
 void setup() {
-	Serial.begin(9600);
-	pinMode(D1, OUTPUT);
+	pinMode(D2, OUTPUT);
 	  
 	WiFi.begin(WIFI_NAME, WIFI_PASSWORD);
 
@@ -47,5 +50,13 @@ void setup() {
 
 void loop() {
 	remoteMe.loop();
+	if (button.onPressed()) {
+		currentLedState=!currentLedState;
+		String body="You've change button state to ";
+		body+=currentLedState?"ON":"OFF";
+		setLed(currentLedState);
+		remoteMe.sendPushNotificationMessage(204,"Change by ESP",body,"badge.png","icon192.png","");
+	}
 }
+
 

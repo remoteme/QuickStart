@@ -1,0 +1,22 @@
+[ {
+  "libraryName" : "RemoteMe ",
+  "libraryAuthor" : "RemoteMe.org",
+  "description" : "Main library to use RemoteMe",
+  "requirements" : "It's connect to your RemoteMe account"
+}, {
+  "libraryName" : "RemoteMeUtils ",
+  "libraryAuthor" : "RemoteMe.org",
+  "description" : "Utils library to use RemoteMe",
+  "requirements" : "For example to make direct connections and use websocket protocol"
+} , {
+  "libraryName" : "RBD_Button ",
+  "libraryAuthor" : "Alex Taujenis",
+  "description" : "Read and debounce buttons and switches",
+  "requirements" : "For nice button event handling"
+}, {
+  "libraryName" : "RBD_Timer ",
+  "libraryAuthor" : "Alex Taujenis",
+  "description" : "Manage many timed events",
+  "requirements" : "For other button library"
+}
+]	
