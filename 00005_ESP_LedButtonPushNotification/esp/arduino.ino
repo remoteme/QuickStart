@@ -15,6 +15,7 @@ $$ELSE$$
 #include <ESP8266WiFi.h>
 $$/IF$$
 
+//Define button connected to D1
 RBD::Button button(D1);
 
 boolean currentLedState;
@@ -27,8 +28,11 @@ inline void setLed(boolean b) {remoteMe.getVariables()->setBoolean("$$led_variab
 
 //*************** IMPLEMENT FUNCTIONS BELOW *********************
 
+// cames from server also when the request came from this device
 void onLedChange(boolean b) {
+    // so we know what is current state
 	currentLedState=b;
+	//and set Diode connected to D2
 	digitalWrite(D2, b?HIGH:LOW);
 }
 
@@ -51,10 +55,15 @@ void setup() {
 void loop() {
 	remoteMe.loop();
 	if (button.onPressed()) {
+	    //change state to opposite when button is pressed
 		currentLedState=!currentLedState;
-		String body="You've change button state to ";
-		body+=currentLedState?"ON":"OFF";
+
+		//send to server and then server set it also at this ESP
 		setLed(currentLedState);
+
+		//and lets send push notification
+		String body="You've change button state to ";
+        body+=currentLedState?"ON":"OFF";
 		remoteMe.sendPushNotificationMessage(204,"Change by ESP",body,"badge.png","icon192.png","");
 	}
 }
