@@ -4,6 +4,8 @@
 #define DEVICE_NAME "$$esp_name$$"
 #define TOKEN "$$token$$"
 
+//#include <Wire.h> // with some boards this includes are mandatory otherwise code will not compile
+//#include <SPI.h> // with some boards this includes are mandatory otherwise code will not compile
 
 #include <RemoteMe.h>
 #include <RemoteMeSocketConnector.h>
