@@ -16,6 +16,11 @@ $$/IF$$
 
 RemoteMe& remoteMe = RemoteMe::getInstance(TOKEN, DEVICE_ID);
 
+int32_t counter=0;
+void onSomeIntegerChanged(int32_t newValue){
+  counter=newValue;
+  remoteMe.getVariables()->setBoolean("justBooleanVariable", counter%2==1);
+}
 
 
 void setup() {

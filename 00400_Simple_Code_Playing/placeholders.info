@@ -4,6 +4,6 @@ $$id: wifiPassword type: password name: WiFi password hint: Your WiFi password r
 $$id: token type: token name: token hint: Token which will be used for authentification $$
 $$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
 
-$$id: esp type: device deviceType: esp name: ESP with code id_name hint: id_name of Your esp default:  ESP with code $$
+$$id: esp type: device deviceType: esp name: ESP with code id_name hint: id_name of Your esp default: ESP with code $$
 
-$$id: webpage type: device deviceType: web name: Code playing webPage id_name hint: id_name of Your webPage default: Code playing webPage $$
+$$id: webpage type: device deviceType: web name:Code playing webPage id_name hint: id_name of Your webPage default: Code playing webPage $$
