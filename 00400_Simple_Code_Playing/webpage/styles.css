@@ -1,0 +1,16 @@
+
+#divBoolean{
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding-top: 20px;
+}
+#divBoolean.on{
+    background-color: red;
+}
+.jsutInlineDiv{
+    display:inline;
+}Parts

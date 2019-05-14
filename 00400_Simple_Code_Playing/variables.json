@@ -1,0 +1,32 @@
+[ {
+  "mode" : "LOCAL",
+  "type" : "SMALL_INTEGER_3",
+  "name" : "just3IntegerVariable",
+  "persistence" : false,
+  "historyRound" :  0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "LOCAL",
+  "type" : "BOOLEAN",
+  "name" : "justBooleanVariable",
+  "persistence" : false,
+  "historyRound" :  0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "someIntegerVariable",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}
+ ]

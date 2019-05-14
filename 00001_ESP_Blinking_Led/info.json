@@ -1,6 +1,6 @@
 {
 	"title":"LED with ESP & webPage",
 	"subTitle":"Hello World blinking LED",
-	"readme":"Very Simple example of blinking LED using button on webPage",
+	"readme":"Very Simple example of blinking LED using button on webPage and ESP",
 	"partIds":["esp_generic","led"]
 }
