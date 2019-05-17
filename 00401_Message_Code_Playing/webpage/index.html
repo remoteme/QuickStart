@@ -51,10 +51,11 @@ number To Send:
 <input type="number" id="floatInput" step="0.001" value="-123.456"/><br/>
 Text To Send:
 <input type="text"  id="textInput" value="There is some string to send" ><br/>
-<button onclick="onButtonClick()" >Send in one message</button>
+<button onclick="sendToEsp()" >Send in one message to ESP</button>
+<button onclick="sendToPython()" >Send in one message to Python</button>
 <br/>
 <br/>
-Message from esp:
+Message from esp or rpi:
 <div id="output">NO message yet </div>
 <connectionstatus  webSocket="true" directConnection="true" camera="false" ></connectionstatus>
 </body>

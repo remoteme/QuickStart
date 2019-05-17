@@ -1,9 +1,16 @@
-var targetDeviceId=$$esp$$;
-
+var espId=$$esp$$;
+var pythonId=$$python$$;
 
 var sendTime;
 
-function onButtonClick(){
+function sendToEsp(){
+	send(espId)
+}
+function sendToPython(){
+	send(pythonId)
+}
+
+function send(targetDeviceId){
 
 	stringToSend=getArray($("#textInput").val());//convert string to utf-8 arrays of bytes
 

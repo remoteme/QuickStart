@@ -4,6 +4,8 @@ $$id: wifiPassword type: password name: WiFi password hint: Your WiFi password r
 $$id: token type: token name: token hint: Token which will be used for authentification $$
 $$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
 
-$$id: esp type: device deviceType: esp name: Message receiver id_name hint: id_name of Your esp default: Message receiver $$
+$$id: esp type: device deviceType: esp name: Message esp id_name hint: id_name of Your esp default: Message esp $$
 
-$$id: webpage type: device deviceType: web name:Message sender id_name hint: id_name of Your webPage default: Message sender $$
+$$id: webpage type: device deviceType: web name:Message webpage id_name hint: id_name of Your webPage default: Message webpage $$
+
+$$id: python type: device deviceType: rpiPython name: Message python id hint:id_name of your python device default: Message python $$

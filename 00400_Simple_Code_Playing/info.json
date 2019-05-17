@@ -2,5 +2,6 @@
 	"title":"Simple playing with code",
 	"subTitle":"Just raw code without building components etc",
 	"readme":"You should build this example to see how code is working under the hood",
-	"partIds":[]
+	"partIds":["_rpi_generic","_esp_generic"],
+	"canIgnoreMissingRpi":true
 }

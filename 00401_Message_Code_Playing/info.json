@@ -2,5 +2,6 @@
 	"title":"Sending message",
 	"subTitle":"Just raw code showing sending messages",
 	"readme":"In this example You can send direct user messages from the webPage to the ESP",
-	"partIds":[]
+	"partIds":["_rpi_generic","_esp_generic"],
+	"canIgnoreMissingRpi":true
 }

@@ -7,3 +7,6 @@ $$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your 
 $$id: esp type: device deviceType: esp name: ESP with code id_name hint: id_name of Your esp default: ESP with code $$
 
 $$id: webpage type: device deviceType: web name:Code playing webPage id_name hint: id_name of Your webPage default: Code playing webPage $$
+
+$$id: python type: device deviceType: rpiPython name: Message python id hint:id_name of your python device default: Message python $$
+
