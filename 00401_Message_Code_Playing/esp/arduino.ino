@@ -25,6 +25,16 @@ void onUserMessage(uint16_t senderDeviceId, uint16_t dataSize, uint8_t *data){
     double doubleValue=RemoteMeMessagesUtils::getDouble(data, pos);
 
     Serial.printf("on User message string:'%s' and doublevalue '%f' \n",str.c_str(),doubleValue);
+
+
+    dataSize = dataSize+10;// its length of "Received: ";
+    pos = 0;
+    data = (uint8_t*)malloc(dataSize );
+
+    RemoteMeMessagesUtils::putString(data, pos, "Received: "+str);
+    RemoteMeMessagesUtils::putDouble(data, pos, doubleValue*-2);
+
+    remoteMe.sendUserMessage(senderDeviceId , data, dataSize );//lets send back modifued
 }
 
 
