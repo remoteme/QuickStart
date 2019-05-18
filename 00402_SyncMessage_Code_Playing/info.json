@@ -1,0 +1,7 @@
+{
+	"title":"Sending syncMessage",
+	"subTitle":"Just raw code showing sending sync messages",
+	"readme":"In this example You can send sync messages",
+	"partIds":["_rpi_generic","_esp_generic"],
+	"canIgnoreMissingRpi":true
+}

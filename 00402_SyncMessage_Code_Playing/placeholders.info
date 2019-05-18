@@ -1,0 +1,11 @@
+$$id: wifiName type: string name: WiFi name hint: Your WiFi name req: 0 halfSize: 1$$
+$$id: wifiPassword type: password name: WiFi password hint: Your WiFi password req: 0 halfSize: 1$$
+
+$$id: token type: token name: token hint: Token which will be used for authentification $$
+$$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your ESP values: ESP 8266 = ESP_8266 values: ESP 32 = ESP_32$$
+
+$$id: esp type: device deviceType: esp name: SyncMessage esp id_name hint: id_name of Your esp default: SyncMessage esp $$
+
+$$id: webpage type: device deviceType: web name:SyncMessage webpage id_name hint: id_name of Your webPage default: SyncMessage webpage $$
+
+$$id: python type: device deviceType: rpiPython name: SyncMessage python id hint:id_name of your python device default: SyncMessage python $$
