@@ -1,0 +1,65 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--color picker -->
+
+    <script src="/libs/iro/iro_min.js"></script>
+    <link rel="stylesheet" href="/libs/getmdl-select/getmdl-select_min.css">
+    <script src="/libs/getmdl-select/getmdl-select_min.js"></script>
+
+    <link rel="stylesheet" href="/libs/getmdl-extend/getmdl-extend_min.css">
+    <script src="/libs/getmdl-extend/getmdl-extend_min.js"></script>
+
+    <!--color picker end -->
+    <script src="/libs/gl-matrix-min.js"></script>
+    <script src="/libs/adapter.js"></script>
+    <script src="/libs/gauge/gauge.min.js"></script>
+    <script src="/libs/remoteMe.js"></script>
+    <script src="/libs/remoteMeMessages.js"></script>
+    <script src="/libs/remoteMeApiRest.js"></script>
+    <script src="/libs/variables.js"></script>
+    <script src="/libs/operationTimer.js"></script>
+    <script src="/libs/remoteMeComponents.js"></script>
+    <link rel="stylesheet" href="/libs/remoteMeComponents.css">
+    <link rel="stylesheet" href="/libs/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body style=";overflow:hidden">
+<script>
+	var thisDeviceId=####deviceId#;
+	var raspberryPiDeviceId=####raspberrypideviceid#;
+</script>
+
+<div style="width:800px;max-width:calc(100vw - 12px);margin:5px;">
+    <div style="width:100%; position:relative">
+        <div id="progress"  class="mdl-progress mdl-js-progress mdl-progress__indeterminate"
+             style="width:calc(100% - 56px);margin-left:22px;position:absolute;top:30px;border:3px solid white;height: 10px;display:none"></div>
+
+        <img id="imageForPhoto" style='width:100%;height: auto;border:1px solid gray;max-height:calc(100vh - 50px)' />
+
+    </div>
+    <button class="mdl-button mdl-js-button  mdl-js-ripple-effect mdl-button--raised" onclick="takePhotoNow()" style="width:100%">Take a photo</button>
+
+</div>
+
+</body>
+</html>
