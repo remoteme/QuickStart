@@ -1,0 +1,6 @@
+{
+	"title":"Take a photo from ESP32",
+	"subTitle":"and saves it at the server ",
+	"readme":"Quiet simple example of taking photo and display at WebPage",
+	"partIds":["esp_32_cam_generic","usb_to_ttl"]
+}

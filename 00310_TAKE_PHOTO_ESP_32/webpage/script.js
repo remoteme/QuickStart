@@ -1,5 +1,7 @@
+var cameraDeviceId=$$webpage$$;
+
 function takePhotoNow(){
-	RemoteMe.getInstance().sendUserMessage(1 ,[1]);
+	RemoteMe.getInstance().sendUserMessage(cameraDeviceId ,[1]);
 	$("#progress").css("display","block");
 }
 

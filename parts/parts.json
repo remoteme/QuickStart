@@ -1,7 +1,7 @@
 [
   {
     "id": "esp8266_generic",
-    "title": "ESP32 based WiFi module",
+    "title": "ESP8266 based WiFi module",
     "subTitle": "Wemos, NodeMCU etc",
     "readme": "",
     "links": [
@@ -18,8 +18,32 @@
     "readme": "",
     "links": [
       {
-        "name": "ESP-32",
+        "name": "ESP-32 AI-Thinker",
         "url": "https://botland.com.pl/en/wifi-modules/8893-esp32-wifi-bt-42-platform-with-module-esp-wroom-32-compatible-with-esp32-devkit.html"
+      }
+    ]
+  },
+  {
+    "id": "esp_32_cam_generic",
+    "title": "ESP32 with camera",
+    "subTitle": "ESP32 with camera",
+    "readme": "",
+    "links": [
+      {
+        "name": "Shop",
+        "url": "https://www.aliexpress.com/item/32948476632.html?spm=a2g0s.9042311.0.0.27424c4du92LIV"
+      }
+    ]
+  },
+  {
+    "id": "usb_to_ttl",
+    "title": "USB to TTL converter",
+    "subTitle": "FTDI programmer",
+    "readme": "You will probably need it to upload your sketch",
+    "links": [
+      {
+        "name": "Shop",
+        "url": "https://pl.aliexpress.com/item/32767306557.html?spm=a2g0s.9042311.0.0.27425c0f90NnFm"
       }
     ]
   },
