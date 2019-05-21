@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../general.css" />
 </head>
 <body>
-<img src="connections.png" style="width:735px" alt="connections"/>
+<img src="connections.png" style="width:720px" alt="connections"/>
 <a style="font-size:70%" href ="https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/">image source Rui Santos</a>
 <br/><br/>
 Programming ESP32_CAM is little bit tricky <br/> However here is a good tutorial showing how to upload your sketch and install needed boards into your ArduinoIDE:
@@ -13,14 +13,14 @@ Programming ESP32_CAM is little bit tricky <br/> However here is a good tutorial
 You will need to follow <b>Install the ESP32 add-on</b> and <b>ESP32-CAM Upload Code</b> section to be able to upload your code.
 <br/>
 to upload your code You need to select configuration:<br/>
-<img src="configuration.png" alt="connections"/>
+<img src="configuration.png" alt="connections"/><br/>
 Upload procedure:
 <ul>
     <li>set everything in arduino IDE as at screen</li>
-    <li>connect PIN-0 to ground</li>
+    <li>connect <code>gpio-0</code> to <code>ground</code></li>
     <li>click restart button at ESP</li>
     <li>upload code and waits to finish</li>
-    <li>unplug PIN-0 from ground</li>
+    <li>unplug <code>gpio-0</code> from <code>ground</code></li>
     <li>click restart button at ESP</li>
 </ul>
 You will generate the code in next step.
