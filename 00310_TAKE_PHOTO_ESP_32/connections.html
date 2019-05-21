@@ -11,6 +11,18 @@ Programming ESP32_CAM is little bit tricky <br/> However here is a good tutorial
 <a  href ="https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/">Tutorial by Rui Santos</a>
 <br/>
 You will need to follow <b>Install the ESP32 add-on</b> and <b>ESP32-CAM Upload Code</b> section to be able to upload your code.
+<br/>
+to upload your code You need to select configuration:<br/>
+<img src="configuration.png" alt="connections"/>
+Upload procedure:
+<ul>
+    <li>set everything in arduino IDE as at screen</li>
+    <li>connect PIN-0 to ground</li>
+    <li>click restart button at ESP</li>
+    <li>upload code and waits to finish</li>
+    <li>unplug PIN-0 from ground</li>
+    <li>click restart button at ESP</li>
+</ul>
 You will generate the code in next step.
 <br/>
 <br/> After uploading the code remember to unplug <code>Gpio 0</code> from the <code>ground</code> and click reset button on ESP

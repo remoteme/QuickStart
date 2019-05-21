@@ -121,7 +121,7 @@ void onUserMessage(uint16_t senderDeviceId, uint16_t dataSize, uint8_t *data){
     esp_camera_fb_return(fb);
     Serial.println("photo took");
 
-    remoteMe.setFileContent(5,"photos/photo.jpg",fb->len,fb->buf);
+    remoteMe.setFileContent($$webpage$$,"photos/photo.jpg",fb->len,fb->buf);
     Serial.printf(" buff size %d \n",fb->len);
     Serial.println("sent");
 }

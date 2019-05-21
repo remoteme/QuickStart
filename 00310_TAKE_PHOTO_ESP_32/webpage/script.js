@@ -1,4 +1,4 @@
-var cameraDeviceId=$$webpage$$;
+var cameraDeviceId=$$esp$$;
 
 function takePhotoNow(){
 	RemoteMe.getInstance().sendUserMessage(cameraDeviceId ,[1]);
@@ -9,7 +9,7 @@ function takePhotoNow(){
 $(document).ready(function () {
 	let remoteme=RemoteMe.getInstance();//connect to RemoteMe and keeps conenction live
 
-	let fileName = "photos/pam.jpg";
+	let fileName = "photos/photo.jpg";
 	let deviceId = thisDeviceId;
 
 	let image = $('#imageForPhoto');
@@ -27,7 +27,5 @@ $(document).ready(function () {
 		}
 	});
 
-
 	remoteme.subscribeEvent(EventSubscriberTypeEnum.FILE_CHANGE);
-
 });
