@@ -1,0 +1,156 @@
+body{
+     background-image: url('bg.png');
+     background-size: cover;
+       background-repeat: no-repeat;
+        font-family: arial;
+     
+}
+
+.parent{
+    width:calc(100vW - 20px);
+    max-width:500px;
+   margin-left: auto;
+    margin-right: auto;
+    padding-top:40px;
+}
+.boxWeather{
+
+    border-radius: 25px;
+    border:5px solid #a3cce2;
+    padding:20px;
+ 
+    margin-bottom:40px;
+ 
+    font-size: 20pt;
+   
+    font-weight: normal;
+    text-align: left;
+    position:relative;
+    line-height: 25pt;
+    padding-top:40px;
+    background-color:rgba(255,255,255,0.6);
+}
+
+
+.boxWeather .caption{
+      position: absolute;
+    border-radius: 25px;
+    border: 5px solid #a3cce2;
+    top: -25px;
+    padding: 5px 25px;
+    background-color: white;
+}
+
+.boxWeather .value{
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    height: 36px;
+    padding-top:5px;
+    background-size: 30px;
+    background-position-y: 1px;
+}
+.boxWeather .temp{
+    background-image: url('icons/temperature.png')
+}
+
+.boxWeather .press{
+  background-image: url('icons/pressure.png')
+}
+
+.boxWeather .date{
+   background-image: url('icons/date.png')
+}
+
+.boxWeather .humm{
+   background-image: url('icons/humidity.png')
+}
+
+.boxWeather .iconBox{
+    position:absolute;
+    top:12px;
+    right:23px;
+
+}
+
+.boxWeather .icon{
+    width: 120px;
+    height: 120px;
+
+}
+
+.boxWeather .iconBox .CLEAR_SKY {
+    background: url('icons/weather_icons/clear_sky.png')
+}
+
+.boxWeather .iconBox .FEW_CLOUDS {
+    background: url('icons/weather_icons/few_clouds.png')
+}
+
+.boxWeather .iconBox .SCATTERED_CLOUDS {
+    background: url('icons/weather_icons/scattered_clouds.png')
+}
+
+.boxWeather .iconBox .BROKEN_CLOUDS {
+    background: url('icons/weather_icons/scattered_clouds.png')
+}
+
+.boxWeather .iconBox .SHOWER_RAIN {
+    background: url('icons/weather_icons/shower_rain.png')
+}
+
+.boxWeather .iconBox .icon.RAIN {
+    background: url('icons/weather_icons/rain.png')
+}
+
+.boxWeather .iconBox .THUNDERSTORM {
+    background: url('icons/weather_icons/thunderstrom.png')
+}
+
+.boxWeather .iconBox .SNOW {
+    background: url('icons/weather_icons/snow.png')
+}
+
+.boxWeather .iconBox .MIST {
+    background: url('icons/weather_icons/mist.png')
+}
+
+.boxWeather .iconBox .CLEAR_SKY_NIGHT {
+    background: url('icons/weather_icons/clear_sky_night.png')
+}
+
+.boxWeather .iconBox .FEW_CLOUDS_NIGHT {
+    background: url('icons/weather_icons/few_clouds_night.png')
+}
+
+.boxWeather .iconBox .SCATTERED_CLOUDS_NIGHT {
+    background: url('icons/weather_icons/scattered_clouds_night.png')
+}
+
+.boxWeather .iconBox .BROKEN_CLOUDS_NIGHT {
+    background: url('icons/weather_icons/scattered_clouds_night.png')
+}
+
+.boxWeather .iconBox .SHOWER_RAIN_NIGHT {
+    background: url('icons/weather_icons/shower_rain.png')
+}
+
+.boxWeather .iconBox .RAIN_NIGHT {
+    background: url('icons/weather_icons/rain.png')
+}
+
+.boxWeather .iconBox .THUNDERSTORM_NIGHT {
+    background: url('icons/weather_icons/thunderstorm.png')
+}
+
+.boxWeather .iconBox .SNOW_NIGHT {
+    background: url('icons/weather_icons/snow.png')
+}
+
+.boxWeather .iconBox .MIST_NIGHT {
+    background: url('icons/weather_icons/mist.png')
+}
+
+boxWeather .iconBox .UNKNOWN {
+    background: url('icons/weather_icons/unknown.png')
+}
+

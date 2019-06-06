@@ -1,0 +1,81 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--color picker -->
+
+    <script src="/libs/iro/iro_min.js"></script>
+    <link rel="stylesheet" href="/libs/getmdl-select/getmdl-select_min.css">
+    <script src="/libs/getmdl-select/getmdl-select_min.js"></script>
+	
+	<link rel="stylesheet" href="/libs/getmdl-extend/getmdl-extend_min.css">
+    <script src="/libs/getmdl-extend/getmdl-extend_min.js"></script>
+	
+    <!--color picker end -->
+    <script src="/libs/gl-matrix-min.js"></script>
+    <script src="/libs/adapter.js"></script>
+    <script src="/libs/gauge/gauge.min.js"></script>
+    <script src="/libs/remoteMe.js"></script>
+    <script src="/libs/remoteMeMessages.js"></script>
+    <script src="/libs/remoteMeApiRest.js"></script>
+    <script src="/libs/variables.js"></script>
+    <script src="/libs/operationTimer.js"></script>
+    <script src="/libs/remoteMeComponents.js"></script>
+    <link rel="stylesheet" href="/libs/remoteMeComponents.css">
+	<link rel="stylesheet" href="/libs/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body  >
+<script>
+	var thisDeviceId=####deviceId#;
+	var raspberryPiDeviceId=####raspberrypideviceid#;
+</script>
+
+
+<div class="parent">
+  <div class="boxWeather" id="weather_now">
+    <div class="caption">Weather now</div>
+    <div class="value temp">loading...</div>
+    <div class="value press">loading...</div>
+    <div class="value date">loading...</div>
+    <div class="iconBox"></div>
+  </div>
+
+  <div class="boxWeather" id="weather_tomorrow">
+    <div class="caption">Weather tomorrow</div>
+    <div class="value temp">loading...</div>
+    <div class="value press">loading...</div>
+    <div class="value date">loading...</div>
+    <div class="iconBox"></div>
+  </div>
+
+  <div class="boxWeather" id="weather_local">
+    <div class="caption">Weather Room</div>
+    <div class="value temp">loading...</div>
+    <div class="value press">loading...</div>
+    <div class="value humm">loading...</div>
+  </div>
+</div>
+
+<connectionstatus  webSocket="true" directConnection="false" camera="false" ></connectionstatus>
+<center><a href="history.html" style="display:block;width:calc(20% - 50px);margin:10px" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Show history</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+[ {
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "temp",
+  "persistence" : true,
+  "historyRound" :  60,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "press",
+  "persistence" : true,
+  "historyRound" : 60,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "humm",
+  "persistence" : true,
+  "historyRound" : 60,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},{
+  "mode" : "REMOTE",
+  "remoteMode" : "WEATHER_NOW",
+  "type" : "SMALL_INTEGER_2_TEXT_2",
+  "name" : "Weather_Now",
+  "persistence" : true,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "$$id: place type: STRING name: localization default: Warsaw, PL hint:  Localization You can change it later $$",
+  "extra2" : "",
+  "extra3" : "dd.MM.yyyy"
+},{
+  "mode" : "REMOTE",
+  "remoteMode": "WEATHER_FORECAST_TOMORROW_NOON",
+  "type" : "SMALL_INTEGER_2_TEXT_2",
+  "name" : "Weather_Tomorrow",
+  "persistence" : true,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" :  "$$place$$",
+  "extra2" : "",
+  "extra3" : "dd.MM.yyyy"
+}
+ ]
