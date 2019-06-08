@@ -204,6 +204,17 @@
     }
   ]
 },{
+  "id": "oled1.3",
+  "title": "Oled display 1.3''",
+  "subTitle": "With SPI inteface",
+  "readme": "Universal OLED display with sharp and bright pixels.",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://amzn.to/2MBfQTt"
+    }
+  ]
+},{
   "id": "wemos",
   "title": "Wemos",
   "subTitle": "Wemos",
@@ -220,6 +231,10 @@
     {
       "name": "shop PL D1 pro",
       "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+    },
+    {
+      "name": "amazon",
+      "url": "https://amzn.to/2MBfQTt"
     }
   ]
 }
