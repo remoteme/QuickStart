@@ -189,6 +189,39 @@
       "url": "https://botland.com.pl/en/tact-switch-buttons/3495-tact-switch-6x6mm-43mm-tht-2pin-5pcs.html"
     }
   ]
+},{
+  "id": "oled0.96",
+  "title": "Oled display 0.96''",
+  "subTitle": "With SPI inteface",
+  "readme": "Universal OLED display with sharp and bright pixels.",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://pl.aliexpress.com/store/product/0-96-inch-IIC-Serial-White-OLED-Display-Module-128X64-I2C-SSD1306-12864-LCD-Screen-Board/1829717_32780054633.html?spm=a2g17.12010615.8148356.3.47f01062teeNLP"
+    }, {
+      "name": "shop PL",
+      "url": "https://nettigo.eu/products/oled-display-0-96-i2c-128x64-blue"
+    }
+  ]
+},{
+  "id": "wemos",
+  "title": "Wemos",
+  "subTitle": "Wemos",
+  "readme": "Wemos D1 module it's a small board with ESP8266-12F. On board there is also USB-UART converter (popular CH340). Because of that, all you need to start programming is simple USB cable.",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://pl.aliexpress.com/store/product/ESP8266-ESP-12-ESP-12F-CH340G-CH340-V2-USB-WeMos-Mini-D1-4M-WIFI-Development-Board/1829717_32960598040.html?spm=a2g17.12010615.8148356.1.6a96dfd6MDdDff"
+    },
+    {
+      "name": "shop PL",
+      "url": "https://nettigo.eu/products/wemos-d1-mini-v2-wifi-module"
+  },
+    {
+      "name": "shop PL D1 pro",
+      "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
+    }
+  ]
 }
 
 ]
