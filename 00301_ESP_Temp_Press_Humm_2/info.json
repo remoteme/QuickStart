@@ -3,5 +3,5 @@
 	"subTitle":"Read data from Sensor and store it",
 	"readme":"Displays actual weather data from your sensor and displays actual data and historical one at the webPage",
 	"partIds":["esp_generic","bme280"],
-	"hidden" : true
+	"hidden" : false
 }
