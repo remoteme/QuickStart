@@ -1,5 +1,5 @@
 [ {
-  "libraryName" : "RemoteMe ",
+  "libraryName" : "RemoteMe",
   "libraryAuthor" : "RemoteMe.org",
   "description" : "Main library to use RemoteMe",
   "requirements" : "It's connect to your RemoteMe account"
