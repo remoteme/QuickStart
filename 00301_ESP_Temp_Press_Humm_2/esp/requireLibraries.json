@@ -14,8 +14,8 @@
   "description" : "A library to drive the Bosch BME280 Altimeter and Pressure sensor",
   "requirements" : "To Read BME280 module measurements"
 }, {
-  "libraryName" : "esp8266-OLED-master ",
-  "libraryAuthor" : "Unknown",
+  "libraryName" : "esp8266-OLED",
+  "libraryAuthor" : "Klar Systems",
   "description" : "A library to drive the OLED display with ESP8266",
   "requirements" : "Will help display data on OLED"
 }
