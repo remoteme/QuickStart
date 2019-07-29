@@ -29,7 +29,7 @@ int16_t r_temp, r_temp_2, r_press, r_press_2;
 
 RemoteMe& remoteMe = RemoteMe::getInstance(TOKEN, DEVICE_ID);
 
-//*************** CODE FOR CONFORTABLE VARIABLE SET *********************
+//*************** CODE FOR COMFORTABLE VARIABLE SET *********************
 
 inline void setHumm(double d) {remoteMe.getVariables()->setInteger("humm", d); }
 inline void setPress(double d) {remoteMe.getVariables()->setInteger("press", d); }

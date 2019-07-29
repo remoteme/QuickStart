@@ -17,7 +17,7 @@ $$/IF$$
 
 RemoteMe& remoteMe = RemoteMe::getInstance(TOKEN, DEVICE_ID);
 
-//*************** CODE FOR CONFORTABLE VARIABLE SET *********************
+//*************** CODE FOR COMFORTABLE VARIABLE SET *********************
 
 inline void setLed(boolean b) {remoteMe.getVariables()->setBoolean("$$led_variable$$", b); }
 
