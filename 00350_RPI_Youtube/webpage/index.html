@@ -1,0 +1,63 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--color picker -->
+
+    <script src="/libs/iro/iro_min.js"></script>
+    <link rel="stylesheet" href="/libs/getmdl-select/getmdl-select_min.css">
+    <script src="/libs/getmdl-select/getmdl-select_min.js"></script>
+
+    <link rel="stylesheet" href="/libs/getmdl-extend/getmdl-extend_min.css">
+    <script src="/libs/getmdl-extend/getmdl-extend_min.js"></script>
+
+    <!--color picker end -->
+    <script src="/libs/gl-matrix-min.js"></script>
+    <script src="/libs/adapter.js"></script>
+    <script src="/libs/gauge/gauge.min.js"></script>
+    <script src="/libs/remoteMe.js"></script>
+    <script src="/libs/remoteMeMessages.js"></script>
+    <script src="/libs/remoteMeApiRest.js"></script>
+    <script src="/libs/variables.js"></script>
+    <script src="/libs/operationTimer.js"></script>
+    <script src="/libs/remoteMeComponents.js"></script>
+    <script src="/libs/dialog-polyfill/dialog-polyfill.js"></script>
+    <link href="/libs/dialog-polyfill/dialog-polyfill.css" rel="stylesheet">
+    <link rel="stylesheet" href="/libs/remoteMeComponents.css">
+    <link rel="stylesheet" href="/libs/animate.min.css">
+    <link href="/libs/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body style="overflow:hidden" >
+<script>
+	var thisDeviceId=####deviceId#;
+	var raspberryPiDeviceId=####raspberrypideviceid#;
+</script>
+<div class="loader"></div>
+
+<variable component="div" type="DOUBLE" name="cpu_temp" style="padding:10px;display: inline;  float: right;" template="cpu temp {value}" ></variable>
+<deviceconnectionstatus  deviceId="$$python$$" text="Rpi" style="padding:10px;display: inline;  float: right; width:100px"  ></deviceconnectionstatus>
+<div id="youtubeStatediv">...</div>
+<div style="width:100%; height:calc(100% - 45px )" id="youtubeContainer">
+
+</div>
+
+</body>
+</html>

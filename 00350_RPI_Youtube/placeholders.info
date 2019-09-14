@@ -1,0 +1,4 @@
+$$id: python type: device deviceType: rpiPython name: Blinking LED python  hint:id_name of your python device $$
+$$id: webpage type: device deviceType: web name: You webPage  hint:id_name of your webPage$$
+$$id: youtube_secret type: string name: Youtube Stream name/key  hint:Can be found here: https://www.youtube.com/live_dashboard$$
+$$id: youtube_channel_id type: string name: Your Youtube CHANNEL ID  hint: Can be found here :  https://www.youtube.com/account_advanced $$

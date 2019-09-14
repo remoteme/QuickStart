@@ -1,0 +1,18 @@
+
+.youtubecontainer{
+    width: 23vw;
+    height: 23vw;
+    margin: 0.5vw auto;
+    background: gold;
+}
+
+#youtubeStatediv{
+    padding:10px;
+    display: inline;
+    float: right;
+}
+
+
+#youtubeStatediv i{
+    padding-right:5px;
+}

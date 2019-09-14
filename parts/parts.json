@@ -227,7 +227,7 @@
     {
       "name": "shop PL",
       "url": "https://nettigo.eu/products/wemos-d1-mini-v2-wifi-module"
-  },
+    },
     {
       "name": "shop PL D1 pro",
       "url": "https://nettigo.eu/products/wemos-d1-mini-pro-wifi-module"
@@ -237,7 +237,34 @@
       "url": "https://amzn.to/2MBfQTt"
     }
   ]
+},{
+  "id": "camera_usb",
+  "title": "USB camera",
+  "subTitle": "USB Camera",
+  "readme": "USB camera supported by RasbperryPi",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://www.a4tech.com/product.aspx?id=36"
+    }
+  ]
+},{
+  "id": "rpi_strong",
+  "title": "RasberryPi 3 or 4",
+  "subTitle": "RasbeprryPi with good CPU",
+  "readme": "",
+  "links": [
+   {
+      "name": "shop Raspberry Pi 3",
+      "url": "https://botland.com.pl/en/modules-and-kits-raspberry-pi-3-b-plus/11142-raspberry-pi-3-model-b-wifi-dualband-bt-1gb-ram-14ghz-7131796402594.html"
+    }, {
+      "name": "shop Raspberry Pi 4",
+      "url": "https://botland.com.pl/pl/moduly-i-zestawy-raspberry-pi-4b/14647-raspberry-pi-4-model-b-wifi-dualband-bluetooth-4gb-ram-15ghz-765756931182.html"
+    }
+  ]
 }
+
+
 
 ]
 

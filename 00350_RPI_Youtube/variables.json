@@ -1,0 +1,12 @@
+[ {
+  "mode" : "LOCAL",
+  "type" : "INTEGER",
+  "name" : "$$id: youtube_state type: string name: variable name default: youtube_state hint:  Just variable name to observe youtube broadcast state$$",
+  "persistence" : true,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+},
+ ]
