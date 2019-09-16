@@ -50,6 +50,8 @@ def checkingThread():
             return
 
 def onYoutube(b):
+    global youtubeState
+    youtubeState = b
     remoteMe.getVariables().setInteger("$$youtube_state$$", b)
     if b==1:
         logger.info('Youtube ON')
@@ -71,21 +73,25 @@ def startYoutube():
     process = subprocess.Popen(['bash', 'youtuberun.sh'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     thread1 = threading.Thread(target = checkingThread)
     thread1.start()
+    logger.info("process ID {}".format(process.pid))
 
 def endYoutube():
     global process
-    subprocess.run(["pkill","-TERM","-P",format(process.pid)])
-    #kill(process.pid)
+    for x in range(0, 3):
+        subprocess.run(["pkill","-TERM","-P",format(process.pid)])
+        logger.info("pkill -TERM -P {}".format(process.pid))
+        time.sleep(0.5)
+
     onYoutube(0)
 
 def youtubeThreadFunction():
     global receiveDeviceConnected
-
+    global youtubeState
     currentOn = False
     wait=0
 
     while True:
-        logger.info('receiveDeviceConnected {} currentOn {} wait {}'.format(receiveDeviceConnected,currentOn,wait))
+        logger.info('receiveDeviceConnected {} currentOn {} wait {} youtube state : {}'.format(receiveDeviceConnected,currentOn,wait,youtubeState))
         if not currentOn and receiveDeviceConnected:
             currentOn=True
             startYoutube()
@@ -97,6 +103,10 @@ def youtubeThreadFunction():
                 endYoutube()
             else:
                 wait=wait+1
+        elif currentOn  and youtubeState == -1:
+            currentOn = False
+            endYoutube()
+            wait= 0
         time.sleep(1)
 
 
@@ -112,25 +122,14 @@ def onDeviceConnectionChange(deviceId,state):
         if state:
             logger.info("device receive is now ON ")
         else:
-            logger.info("device receive is now OFF transmission will end in 20s ")
+            logger.info("device receive is now OFF transmission will end in 10s ")
         receiveDeviceConnected = state
 
-def onUserSyncMessage(senderDeviceId,data):
-    reader= remoteMeDataReader.RemoteMeDataReader(data)
-    # your reading here
-    writer= remoteMeDataWriter.RemoteMeDataWriter()
-    # your writting here
-
-    return writer.getBytes()
-
-def onUserMessage(senderDeviceId,data):
-    reader= remoteMeDataReader.RemoteMeDataReader(data)
-# your readings here
 
 try:
     process =0
     receiveDeviceConnected = False
-
+    youtubeState = 0
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
                         datefmt='%d.%m %H:%M',
@@ -143,10 +142,9 @@ try:
     remoteMe.startRemoteMe(sys.argv)
 
 
-    remoteMe.setUserSyncMessageListener(onUserSyncMessage)
-    remoteMe.setUserMessageListener(onUserMessage)
     remoteMe.subscribeDeviceConnectionChangeEvent(onDeviceConnectionChange)
 
+    onYoutube(0)
     tempThread = threading.Thread(target = checkTemperature)
     tempThread.start()
 
@@ -156,6 +154,4 @@ try:
     remoteMe.wait()
 
 finally:
-    thread1.stop()
     pass
-face
