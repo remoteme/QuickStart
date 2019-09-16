@@ -2,6 +2,5 @@
 	"title":"Youtube broadcast - RPi ",
 	"subTitle":"Only if somebody is watching",
 	"readme":"Streams to Youtube from USB camera only if somebody opens the page with preview",
-	"partIds":["rpi_strong","camera_usb"],
-	"hidden": true
+	"partIds":["rpi_strong","camera_usb"]
 }
