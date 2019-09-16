@@ -43,7 +43,7 @@ function connectYoutubeVariable() {
 					}, 10000);
 
 				} else {
-					$("#youtubeContainer").html(`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/live_stream?channel=UCVYdTbKJgYtWV3IbeaWCr6w&autoplay=1" frameborder="0" allowfullscreen></iframe>`);
+					$("#youtubeContainer").html(`<iframe width="100%" height="100%" src="https://www.youtube.com/embed/live_stream?channel=$$youtube_channel_id$$&autoplay=1" frameborder="0" allowfullscreen></iframe>`);
 
 					showInfoModal("Youtube actived.", "fab fa-youtube", "#00c900", 2);
 				}
