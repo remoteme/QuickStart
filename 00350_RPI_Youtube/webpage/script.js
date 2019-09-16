@@ -8,7 +8,7 @@ $(document).ready(function () {
 	}, 2000);
 	let remoteme = RemoteMe.getInstance();
 	remoteme.remoteMeConfig.deviceConnectionChange.push((deviceId, connected) => {
-		if (deviceId == 307) {//rpi device
+		if (deviceId == $$python$$) {//rpi device
 			clearTimeout(notConnected);
 			if (!connected) {
 				showInfoModal("RasbperryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
