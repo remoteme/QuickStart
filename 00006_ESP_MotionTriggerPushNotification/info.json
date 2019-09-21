@@ -1,0 +1,7 @@
+{
+	"title":"Send notification when movement detected",
+	"subTitle":"You can use it as simple alarm notification",
+	"readme":"Push is sent when button at ESP is pressed.",
+	"partIds":["esp_generic","motion_sensor","led"],
+	"hidden":true
+}

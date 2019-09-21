@@ -262,6 +262,17 @@
       "url": "https://botland.com.pl/pl/moduly-i-zestawy-raspberry-pi-4b/14647-raspberry-pi-4-model-b-wifi-dualband-bluetooth-4gb-ram-15ghz-765756931182.html"
     }
   ]
+},{
+  "id": "motion_sensor",
+  "title": "Motion sensor",
+  "subTitle": "Simple PIR sensor HC-SR501",
+  "readme": "Simple PIR sensor - detects movements in range 7m, sentry angle: 110° On output 3.3 means movement detection. 0V - no movement detected.",
+  "links": [
+    {
+      "name": "shop",
+      "url": "https://nettigo.eu/products/simple-pir-sensor-hc-sr501"
+    }
+  ]
 }
 
 
