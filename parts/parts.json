@@ -241,7 +241,7 @@
   "id": "camera_usb",
   "title": "USB camera",
   "subTitle": "USB Camera",
-  "readme": "USB camera supported by RasbperryPi",
+  "readme": "USB camera supported by RaspberryPi",
   "links": [
     {
       "name": "shop",

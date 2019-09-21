@@ -2,18 +2,18 @@ var previousYoutube = undefined;
 
 $(document).ready(function () {
 
-	showInfoModal("Checking RasbperryPi connection", "fab fa-raspberry-pi");
+	showInfoModal("Checking Raspberry Pi connection", "fab fa-raspberry-pi");
 	let notConnected = setTimeout(() => {
-		showInfoModal("RasbperryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
+		showInfoModal("RaspberryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
 	}, 2000);
 	let remoteme = RemoteMe.getInstance();
 	remoteme.remoteMeConfig.deviceConnectionChange.push((deviceId, connected) => {
 		if (deviceId == $$python$$) {//rpi device
 			clearTimeout(notConnected);
 			if (!connected) {
-				showInfoModal("RasbperryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
+				showInfoModal("RaspberryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
 			} else {
-				showInfoModal("RasbperryPi connected", "fab fa-raspberry-pi", "#00c900", 2);
+				showInfoModal("RaspberryPi connected", "fab fa-raspberry-pi", "#00c900", 2);
 				connectYoutubeVariable();
 			}
 
