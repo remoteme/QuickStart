@@ -54,7 +54,7 @@ void setup() {
 
 void loop() {
 	 if (!remoteMe.loop()){//no connection established
-        return false;
+        return ;
       }
 	if (button.onPressed()) {
 	    //change state to opposite when button is pressed

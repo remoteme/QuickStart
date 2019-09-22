@@ -37,7 +37,7 @@ void setup() {
 
 void loop() {
   if (!remoteMe.loop()){//no connection established
-    return false;
+    return ;
   }
   static long firstReadTime = 0;
   static long sendTime = 0;
