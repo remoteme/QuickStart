@@ -1,11 +1,1 @@
-[ {
-  "mode" : "LOCAL",
-  "type" : "BOOLEAN",
-  "name" : "$$id: led_variable type: string name: variable name default: led hint:  Just variable name to store LED state$$",
-  "persistence" : true,
-  "historyRound" : 0,
-  "scheduled" : false,
-  "extra" : "",
-  "extra2" : "",
-  "extra3" : ""
-} ]
+[ ]

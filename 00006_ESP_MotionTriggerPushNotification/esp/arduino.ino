@@ -7,7 +7,11 @@
 #include <RemoteMe.h>
 #include <RemoteMeSocketConnector.h>
 
+$$IF ESP_type == ESP_32$$
+#include <WiFi.h>
+$$ELSE$$
 #include <ESP8266WiFi.h>
+$$/IF$$
 
 #define PIN D5
 #define numberOfMoves 2
