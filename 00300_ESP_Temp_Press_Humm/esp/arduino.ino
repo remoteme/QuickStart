@@ -115,7 +115,9 @@ void sendData(){
 }
 
 void loop() {
-    remoteMe.loop();
+     if (!remoteMe.loop()){//no connection established
+        return false;
+      }
     static long time=0;
     if (time+10000<millis()){
       time=millis();

@@ -38,7 +38,9 @@ void setup() {
 
 
 void loop() {
-	remoteMe.loop();
+	 if (!remoteMe.loop()){//no connection established
+        return false;
+      }
 	static long lastTimeSend=0;
   if (lastTimeSend+1000<millis()){
     lastTimeSend=millis();

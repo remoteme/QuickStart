@@ -7,4 +7,4 @@ $$id: ESP_type type: enum req: 1 name: ESP default: ESP_8266 hint: Type of your 
 
 $$id: esp type: device deviceType: esp name: ESP push sender id_name hint: id_name of Your esp default: ESP Pusher $$
 
-$$id: webpage type: device deviceType: web name: Application id_name to receiver push notification hint: id_name of Your webPage default: Pusher receiver $$
+$$id: webpage type: device deviceType: web name: Application id_name to receiver push notification hint: id_name of Your webPage default: Alarm receiver $$
