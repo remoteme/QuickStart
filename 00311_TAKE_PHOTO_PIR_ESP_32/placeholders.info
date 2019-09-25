@@ -1,0 +1,9 @@
+$$id: wifiName type: string name: WiFi name hint: Your WiFi name req: 0 halfSize: 1$$
+$$id: wifiPassword type: password name: WiFi password hint: Your WiFi password req: 0 halfSize: 1$$
+
+$$id: token type: token name: token hint: Token which will be used for authentification $$
+$$id: camera_type type: enum req: 1 name: camera model default: CAMERA_MODEL_AI_THINKER hint: Type of your camera values: ai thinker = CAMERA_MODEL_AI_THINKER values: wrover kit = CAMERA_MODEL_WROVER_KIT values: esp eye = CAMERA_MODEL_ESP_EYE values: m5stack psram = CAMERA_MODEL_M5STACK_PSRAM values: m5stack wide = CAMERA_MODEL_M5STACK_WIDE$$
+
+$$id: esp type: device deviceType: esp name: Photo taker esp id_name hint: id_name of Your esp default: Photo taker $$
+
+$$id: webpage type: device deviceType: web name:Photo display id_name hint: id_name of Your webPage default: Photo display $$

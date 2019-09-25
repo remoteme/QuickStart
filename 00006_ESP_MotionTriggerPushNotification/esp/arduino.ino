@@ -75,8 +75,8 @@ void loop() {
   if (state >= numberOfMoves*2 - 1) {
     state = 0;
     if ((sendTime == 0) ||  (sendTime + repeatingSendTimeoutSeconds * 1000 < millis())) {//so we dont send to frequently
-      String body = "Move appears";
-      remoteMe.sendPushNotificationMessage(2, "Move appears", body, "badge.png", "icon192.png", "");
+
+      remoteMe.sendPushNotificationMessage(2, "Move appears", "Move appears", "badge.png", "icon192.png", "");
       Serial.println("send push");
     } else {
       Serial.println("push not send because of repeating timeout time");
