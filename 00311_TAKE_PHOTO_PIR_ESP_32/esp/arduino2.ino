@@ -147,6 +147,5 @@ void loop()
         takePhoto();
         lastSend = millis();
         remoteMe.sendPushNotificationMessage($$webpage$$, "Move appears", "Move", "badge.png", "icon192.png", "photos/photo.jpg");
-        Serial.println("send notification");
     }
 }
