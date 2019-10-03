@@ -45,24 +45,14 @@
 </head>
 
 
-<body style=";overflow:hidden">
+<body >
 <script>
 	var thisDeviceId=####deviceId#;
 	var raspberryPiDeviceId=####raspberrypideviceid#;
 </script>
 
-<div style="width:800px;max-width:calc(100vw - 12px);margin:5px;">
-    <div style="width:100%; position:relative">
-        <div id="progress"  class="mdl-progress mdl-js-progress mdl-progress__indeterminate"
-             style="width:calc(100% - 56px);margin-left:22px;position:absolute;top:30px;border:3px solid white;height: 10px;display:none"></div>
+<button class="mdl-button mdl-js-button  mdl-js-ripple-effect mdl-button--raised" onclick="location.href='index.html'" style="width:100%;margin-top:20px">Back to photo taker</button>
 
-        <img id="imageForPhoto" style='width:100%;height: auto;border:1px solid gray;max-height:calc(100vh - 50px)' />
-
-    </div>
-    <button class="mdl-button mdl-js-button  mdl-js-ripple-effect mdl-button--raised" onclick="takePhotoNow()" style="width:100%">Take a photo</button>
-    <button class="mdl-button mdl-js-button  mdl-js-ripple-effect mdl-button--raised" onclick="location.href='history.html'" style="width:100%;margin-top:20px">Open History</button>
-
-</div>
-
+<gallery  imageWidth="450px" imageHeight="75vw" mask="photos/photo(_\d+)?.jpg" style="margin-top:20px" displayDate="true" dateFormat="DD.MM.YYYY HH:mm" ></gallery>
 </body>
 </html>

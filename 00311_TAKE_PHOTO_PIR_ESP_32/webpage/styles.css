@@ -1,0 +1,11 @@
+.infinitiveScrollContainer .preview{
+    width:450px;
+    height:75vw;
+    max-width: 100%;
+    max-height: 340px;
+}
+
+.infinitiveScrollContainer .created {
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
