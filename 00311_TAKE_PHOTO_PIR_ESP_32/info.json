@@ -2,6 +2,5 @@
 	"title":"Take a photo from ESP32",
 	"subTitle":"when Move is detected and saves it at the server. And send push notifications ",
 	"readme":"Taking photo and display at WebPage PIR triggered making photo. Making photo by button click at mobile app is also possible",
-	"partIds":["esp_32_cam_generic","usb_to_ttl","led","motion_sensor"],
-	"hidden":true
+	"partIds":["esp_32_cam_generic","usb_to_ttl","led","motion_sensor"]
 }
