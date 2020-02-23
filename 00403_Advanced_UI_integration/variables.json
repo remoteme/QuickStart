@@ -1,0 +1,51 @@
+[ {
+  "mode" : "LOCAL",
+  "type" : "BOOLEAN",
+  "name" : "button1Active",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}, {
+  "mode" : "LOCAL",
+  "type" : "BOOLEAN",
+  "name" : "button2Active",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}, {
+  "mode" : "LOCAL",
+  "type" : "TEXT",
+  "name" : "button1Text",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}, {
+  "mode" : "LOCAL",
+  "type" : "TEXT",
+  "name" : "button2Text",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}, {
+  "mode" : "LOCAL",
+  "type" : "TEXT",
+  "name" : "label",
+  "persistence" : false,
+  "historyRound" : 0,
+  "scheduled" : false,
+  "extra" : "",
+  "extra2" : "",
+  "extra3" : ""
+}]

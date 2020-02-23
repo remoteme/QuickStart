@@ -1,0 +1,6 @@
+{
+	"title":"Send messages to ESP",
+	"subTitle":"And esp changing buttons on WebPage",
+	"readme":"You will send messages to ESP and esp will be able to control Web page components",
+	"partIds":["_esp_generic"]
+}
