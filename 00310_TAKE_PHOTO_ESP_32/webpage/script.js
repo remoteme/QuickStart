@@ -20,12 +20,11 @@ $(document).ready(function () {
 		$("#progress").css("display","none");
 	};
 
-	remoteme.remoteMeConfig.deviceFileChange.push((rdeviceId,rfileName)=>{
+	remoteme.addFileChangeListener((rdeviceId,rfileName)=>{
 		if ((deviceId==rdeviceId)&&(rfileName==fileName)){
 			image[0].src=`/wp/device_${deviceId}/${fileName}?r=${Math.floor(Math.random() * 10000)}`;
 
 		}
 	});
 
-	remoteme.subscribeEvent(EventSubscriberTypeEnum.FILE_CHANGE);
 });

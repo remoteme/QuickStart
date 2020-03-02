@@ -6,8 +6,8 @@ $(document).ready(function () {
 	let notConnected = setTimeout(() => {
 		showInfoModal("RaspberryPi Not Connected - You cannot interact ", "fas fa-unlink", "#FF0000");
 	}, 2000);
-	let remoteme = RemoteMe.getInstance();
-	remoteme.remoteMeConfig.deviceConnectionChange.push((deviceId, connected) => {
+
+	RemoteMe.getInstance().addDeviceConnectionChangeListener((deviceId, connected) => {
 		if (deviceId == $$python$$) {//rpi device
 			clearTimeout(notConnected);
 			if (!connected) {
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 	});
 
-	remoteme.subscribeEvent(EventSubscriberTypeEnum.DEVICE_CONNECTION);
+
 
 
 });

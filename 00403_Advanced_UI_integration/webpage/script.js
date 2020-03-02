@@ -19,27 +19,27 @@ $(document).ready(function () {
 	RemoteMe.getInstance();//connect to RemoteMe and keeps conenction live
 
 
-	RemoteMe.getInstance().addVariableBooleanChangeListener("button1Active",(value)=>{
+	RemoteMe.getInstance().getVariables().observeBoolean("button1Active",(value)=>{
 		$("#button1")[0].disabled=value;
 	});
-	RemoteMe.getInstance().addVariableBooleanChangeListener("button2Active",(value)=>{
+	RemoteMe.getInstance().getVariables().observeBoolean("button2Active",(value)=>{
 		$("#button2")[0].disabled=value;
 	});
 
-	RemoteMe.getInstance().addVariableTextChangeListener("button1Text",(value)=>{
+	RemoteMe.getInstance().getVariables().observeText("button1Text",(value)=>{
 		$("#button1")[0].innerHTML=value;
 	});
 
-	RemoteMe.getInstance().addVariableTextChangeListener("button2Text",(value)=>{
+	RemoteMe.getInstance().getVariables().observeText("button2Text",(value)=>{
 		$("#button2")[0].innerHTML=value;
 	});
 
-	RemoteMe.getInstance().addVariableTextChangeListener("label",(value)=>{
+	RemoteMe.getInstance().getVariables().observeText("label",(value)=>{
 		$("#label")[0].innerHTML=value;
 	});
 
 $$IF rental == 1 $$
-	RemoteMe.getInstance().addGuestInfoChangeListener((credit,time)=>{
+	GuestController.getInstance().addGuestInfoChangeListener((credit,time)=>{
 		$("#button3")[0].disabled=(credit<=10);
 	});
 $$/IF$$
